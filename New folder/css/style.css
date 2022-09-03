@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Montserrat:wght@100&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark: #350363;
+    --background:#ffffff;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Montserrat","sans-serif";
+
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    background-color: #2F88FF;
+}
+
+main{
+    width:30vw;
+    text-align: center;
+    background-color: var(--background);
+    border: solid var(--dark);
+    border-radius: 2.5rem;
+    border-width: 1rem;
+    padding: 8rem 5rem;
+    color:#1f2933;
+}
+
+h2{
+    font-size: 2.2rem;
+    margin:2rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.8rem;
+    font-family:"josefin sans";
+}
+
+img{
+    width:90%;
+    max-height: 22rem;
+    height:auto;
+    margin: 1rem 0 4rem 0;
+}
+
+.button-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:4rem;
+    margin-top: 2rem;
+}
+
+
+
+button{
+  background-color: #2F88FF;
+  border-radius: 100px;
+  box-shadow: rgba(15, 36, 224, 0.2) 0 -25px 18px -14px inset,rgba(15, 36, 224, 0.2) 0 1px 2px,rgba(15, 36, 224, 0.2) 0 2px 4px,rgba(15, 36, 224, 0.2) 0 4px 8px,rgba(15, 36, 224, 0.2) 0 8px 16px,rgba(15, 36, 224, 0.2) 0 16px 32px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin:0.3rem;
+}
+
+button:hover {
+  box-shadow: rgba(15, 36, 224, 0.3) 0 -25px 18px -14px inset,rgba(15, 36, 224, 0.2) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(15, 36, 224, 0.2) 0 4px 8px,rgba(15, 36, 224, 0.2) 0 8px 16px,rgba(15, 36, 224, 0.2) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+button:last-child{
+    background:var(--dark)
+}
+button:last-child:hover{
+    background: #FFE3E3;
+    color:rgb(139, 67, 67);
+    
+}
+button:first-child:hover{
+    background: #BDF9D3;
+    color:green;
+}
+
+#new:hover{
+    background:#2F88FF;
+    color:white;
+}
+
+@media(max-width: 1200px){
+    body{
+        width: 100vw;
+    }
+    main{
+        width:50vw;
+        padding:2rem;
+    }
+}
